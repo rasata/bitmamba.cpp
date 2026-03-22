@@ -22,8 +22,6 @@ static gten::GPT2Tokenizer load_tokenizer(const std::string &vocab_file_path) {
   return gten::GPT2Tokenizer{vin};
 }
 
-#include <immintrin.h>
-
 int main(int argc, char **argv) {
   if (argc < 4) {
     std::cerr << "Usage: " << argv[0]
